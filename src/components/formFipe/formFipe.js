@@ -69,8 +69,9 @@ function MarcasDropdown() {
     };
 
     return (
-        <div className='search'>
-            <div>
+        <div className='main'>
+            <div className='formSearch'>
+                <h2>Buscar veículo</h2>
                 <label htmlFor="marcas">Selecione uma marca:</label>
                 <select id="marcas" name="marcas" onChange={handleMarcaChange}>
                     <option value="">Selecione...</option>
@@ -100,7 +101,7 @@ function MarcasDropdown() {
                 )}
             </div>
 
-            <div>
+            <div className='formTable'>
                 {anoSelecionado.length > 0 && (
                     <div>
                         <h2>Detalhes</h2>
